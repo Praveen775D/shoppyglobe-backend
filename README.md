@@ -27,34 +27,57 @@ It supports basic features like viewing products, managing a cart, and user auth
 
 ---
 
-## Project Structure
+##  Project Structure
 
+```bash
 shoppyglobe-backend/
-│── config/
-│   └── db.js
-│── controllers/
-│   ├── authController.js
-│   ├── productController.js
-│   └── cartController.js
-│── models/
-│   ├── User.js
-│   ├── Product.js
-│   └── Cart.js
-│── routes/
-│   ├── authRoutes.js
-│   ├── productRoutes.js
-│   └── cartRoutes.js
-│── middleware/
-│   └── authMiddleware.js
-│── .env
-│── server.js
-│── package.json
+│
+├── config/
+│   └── db.js                 # MongoDB connection setup
+│
+├── controllers/
+│   ├── authController.js    # Handles register & login logic
+│   ├── productController.js # Handles product APIs
+│   └── cartController.js    # Handles cart operations
+│
+├── models/
+│   ├── User.js              # User schema (email, password)
+│   ├── Product.js           # Product schema (name, price, etc.)
+│   └── Cart.js              # Cart schema (userId, productId, quantity)
+│
+├── routes/
+│   ├── authRoutes.js        # Auth routes (/register, /login)
+│   ├── productRoutes.js     # Product routes (/products)
+│   └── cartRoutes.js        # Cart routes (/cart)
+│
+├── middleware/
+│   └── authMiddleware.js    # JWT authentication middleware
+│
+├── .env                     # Environment variables (not uploaded to GitHub)
+├── .gitignore               # Ignored files (node_modules, .env)
+├── package.json             # Project dependencies & scripts
+├── server.js                # Entry point of the application
+└── README.md                # Project documentation
+```
 
 ---
+
+###  Structure Explanation
+
+* **config/** → Database connection setup
+* **controllers/** → Business logic for APIs
+* **models/** → MongoDB schemas
+* **routes/** → API endpoints
+* **middleware/** → Authentication logic
+* **server.js** → Starts the server and connects everything
+
 
 ##  Setup Instructions
 
 1. Clone the repo
+
+git hub repository
+https://github.com/Praveen775D/shoppyglobe-backend
 
 ```bash
 git clone https://github.com/Praveen775D/shoppyglobe-backend

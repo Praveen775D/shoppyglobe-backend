@@ -56,8 +56,8 @@ shoppyglobe-backend/
 
 1. Clone the repo
 
-```bash id="s2x9lq"
-git clone https://github.com/your-username/shoppyglobe-backend.git
+```bash
+git clone https://github.com/Praveen775D/shoppyglobe-backend
 cd shoppyglobe-backend
 ```
 

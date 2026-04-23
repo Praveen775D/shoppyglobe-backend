@@ -16,7 +16,6 @@ It supports basic features like viewing products, managing a cart, and user auth
   * Remove items from cart
 
 ---
-
 ##  Tech Used
 
 * Node.js
